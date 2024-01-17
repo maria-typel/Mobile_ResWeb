@@ -1,0 +1,198 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(18, 19, 19, 0.692);
+}
+
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: aliceblue;
+}
+
+.hero-text h1 {
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px #000;
+}
+
+.hero-text span {
+	text-transform: uppercase;
+	color: rgba(69, 124, 225, 0.9);
+}
+
+.section-title {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* nawigacja */
+nav {
+	height: 60px;
+	line-height: 60px;
+	background-color: #ddd;
+	text-align: center;
+}
+
+.burger-icon {
+	display: block;
+	margin-left: auto;
+	padding: 0 30px;
+	line-height: 60px;
+	font-size: 30px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	transition: color 2s;
+}
+
+.burger-icon i:hover {
+	color: rgba(34, 95, 207, 0.772);
+}
+
+.nav-items {
+	display: none;
+}
+
+/* header */
+.header {
+	position: relative;
+	height: 300px;
+	background-image: url('../img/panorama-3725657_640.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+/* main body*/
+
+main {
+	margin: 40px 10px;
+}
+
+/* o nas */
+.about-us-info {
+	margin-bottom: 10px;
+}
+
+/* produkty */
+.products {
+	margin: 60px auto;
+}
+
+.product {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: bottom;
+}
+
+.product h3 {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px;
+}
+
+.first-product {
+	background-image: url('../img/mobile\ Skiing_680.jpg');
+}
+
+.second-product {
+	background-image: url('../img/mobile\ Skating_680.jpg');
+}
+
+.third-product {
+	background-image: url('../img/mobile\ Walking_680.jpg');
+	background-position: center;
+}
+
+.fourth-product {
+	background-image: url('../img/mobile\ Castle_680.jpg');
+}
+
+@media (min-width: 768px) {
+	.burger-icon {
+		display: none;
+	}
+	.nav-items {
+		display: block;
+	}
+
+	.nav-items a {
+		margin-right: 50px;
+		padding: 10px;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: black;
+		font-weight: bold;
+		transition: color 0.5s;
+	}
+
+	.nav-items a:hover {
+		color: rgba(34, 95, 207, 0.772);
+	}
+
+	.header {
+		height: 400px;
+		background-image: url('../img/panorama-3725657_1280.jpg');
+	}
+
+	.hero-text h1 {
+		font-size: 46px;
+	}
+
+	.hero-text p {
+		font-size: 19px;
+	}
+
+	.product h3 {
+		font-size: 24px;
+	}
+
+	.first-product {
+		background-image: url('../img/mobile\ Skiing_1280.jpg');
+	}
+
+	.second-product {
+		background-image: url('../img/mobile\ Skating_1280.jpg');
+	}
+
+	.third-product {
+		background-image: url('../img/mobile\ Walking_1280.jpg');
+	}
+
+	.fourth-product {
+		background-image: url('../img/mobile\ Castle_1280.jpg');
+	}
+}
+
+@media (min-width: 992px) {
+	.gap-reset {
+		font-size: 0;
+	}
+
+	.product {
+		display: inline-block;
+		width: 50%;
+	}
+}
